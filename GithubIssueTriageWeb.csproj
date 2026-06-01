@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>06dd8a79-0c5b-43bd-bd3d-76506997596e</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Helpers\Models\" />
+  </ItemGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="Azure.Messaging.ServiceBus" Version="7.20.1" />
+	  <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.4" />
+	  <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.23.0" />
+	  <PackageReference Include="Swashbuckle.AspNetCore" Version="10.1.5" />
+	  <PackageReference Include="OpenAI" Version="2.10.0" />
+	    <PackageReference Include="Octokit" Version="14.0.0" />
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GitHubIssueTriageShared\GitHubIssueTriageShared.csproj" />
+  </ItemGroup>
+
+</Project>
