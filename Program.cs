@@ -1,6 +1,3 @@
-using GitHubIssueTriageAgent.Agents;
-using GitHubIssueTriageAgent.Services;
-using GithubIssueTriageWeb.Configuration;
 using GithubIssueTriageShared.Models.Github;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.OpenApi;
